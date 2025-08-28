@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d0e1fa;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+
+form {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  width: 420px;
+}
+
+
+h1 {
+  margin-bottom: 6px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #222;
+}
+
+p.subtitulo {
+  margin-bottom: 25px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+
+label {
+  display: block;
+  margin: 12px 0 5px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #333;
+}
+
+
+input {
+  width: 100%;
+  height: 42px;
+  padding: 10px 14px;
+  border: 1px solid #dcdfe6;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.15);
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container input {
+  padding-right: 40px;
+}
+
+.input-container .toggle-visibility {
+      position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.button button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button button[type="submit"] {
+    background-color: #007BFF;
+    color: rgb(0, 0, 0);
+}
+
+.button button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.button button[type="reset"] {
+    background-color: #d3d3d3;
+    color: #333;
+}
+
+.button button[type="reset"]:hover {
+    background-color: #bfbfbf;
+}
+
+input[readonly] {
+  background-color: #f9f9f9;
+  color: #555;
+}
+
+.is-valid {
+    border: 2px solid green;
+}
+
+.is-invalid {
+    border: 2px solid red;
+}
+
+.feedback.ok {
+    color: green;
+    font-size: 0.9em;
+}
+
+.feedback.err {
+    color: red;
+    font-size: 0.9em;
+}
